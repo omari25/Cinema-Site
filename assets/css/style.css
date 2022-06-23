@@ -8,3 +8,47 @@ body {
   background-color: #245d6b;
   margin: 0;
 }
+
+header {
+  padding: 2vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: #41ebce;
+}
+
+.search {
+  background-color: white;
+  border: 2px solid #b3aeae;
+  border-radius: 50px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  color: #000000;
+}
+
+.search::placeholder {
+  color: #8e8e8f;
+}
+
+.search:focus {
+  outline: none;
+  background-color: #ffffff;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  padding: 2vh 0;
+  color: white;
+  
+}
+
+.description p {
+  padding: 10px;
+  border: 1px solid #41ebce;
+  border-radius: 4px;
+  width: 85%;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px #41ebce;
+  letter-spacing: 0.5px;
+}
