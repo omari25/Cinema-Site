@@ -53,6 +53,12 @@ header {
   letter-spacing: 0.5px;
 }
 
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .movie {
   width: 250px;
   margin: 1rem;
