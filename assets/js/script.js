@@ -5,3 +5,17 @@ const SEARCH_API = 'https://api.themoviedb.org/3/search/movie?api_key=3e54d07be1
 const main = document.getElementById('main')
 const form = document.getElementById('form')
 const search = document.getElementById('search')
+
+getMovies(API_URL)
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault()
+    const searchInput = search.value
+    if(searchInput && searchInput !== '') {
+        getMovies(SEARCH_API + searchInput)
+        search.value = ''
+    } else {
+        window.location.reload()
+    }
+})
+
