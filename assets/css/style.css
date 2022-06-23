@@ -52,3 +52,17 @@ header {
   box-shadow: 2px 2px 5px #41ebce;
   letter-spacing: 0.5px;
 }
+
+.movie {
+  width: 250px;
+  margin: 1rem;
+  background-color: #373b69;
+  box-shadow: 0 4px 5px #00000033;
+  position: relative;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.movie img {
+  width: 100%;
+}
