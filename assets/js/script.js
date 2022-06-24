@@ -6,8 +6,6 @@ const main = document.getElementById('main')
 const form = document.getElementById('form')
 const search = document.getElementById('search')
 
-getMovies(API_URL)
-
 form.addEventListener('submit', (e) => {
     e.preventDefault()
     const searchInput = search.value
@@ -19,11 +17,12 @@ form.addEventListener('submit', (e) => {
     }
 })
 
-async function getMovies(url) {
-    const res = await fetch(url)
-    const data = await res.json()
-    showMovies(data.results)
+function getMovies(url) {
+    fetch(url)
+    .then(resp => resp.json())
+    .then(data => {showMovies(data.results)})
 }
+getMovies(API_URL);
 
 function showMovies(movies) {
     main.innerHTML = ''
